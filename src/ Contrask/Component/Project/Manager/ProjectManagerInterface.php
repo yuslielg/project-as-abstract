@@ -10,8 +10,8 @@ interface ProjectManagerInterface
     /**
      * Picks a project using given criteria.
      *
-     * @param $criteria
-     * @return mixed The project
+     * @param string|array $criteria
+     * @return mixed
      */
     public function pick($criteria);
 
@@ -20,7 +20,7 @@ interface ProjectManagerInterface
      * It returns all projects if criteria is null.
      *
      * @param mixed $criteria
-     * @return array The projects
+     * @return array
      */
     public function collect($criteria = null);
 }
