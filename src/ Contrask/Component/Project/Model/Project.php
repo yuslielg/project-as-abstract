@@ -1,20 +1,52 @@
 <?php
 
-namespace Contrask\Component\Project\Entity;
-
-use Doctrine\ORM\Mapping as ORM;
+namespace Contrask\Component\Project\Model;
 
 /**
  * @author Yusliel Garcia <yuslielg@gmail.com>
- * @ORM\Model
+ *
  */
 class Project
 {
     /**
-     * @var integer
-     * @ORM\Id
-     * @ORM\Column(type="integer")
-     * @ORM\GeneratedValue(strategy="AUTO")
+     * @var string $strid
      */
-    protected $id;
+    private $strid;
+
+    /**
+     * @var string $name
+     */
+    private $name;
+
+    /**
+     * @param string $strid
+     */
+    public function setStrid($strid)
+    {
+        $this->strid = $strid;
+    }
+
+    /**
+     * @return string
+     */
+    public function getStrid()
+    {
+        return $this->strid;
+    }
+
+    /**
+     * @param string $name
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
+
+    /**
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
 }
