@@ -9,12 +9,12 @@ namespace Contrask\Component\Project\Model;
 class Project
 {
     /**
-     * @var string $strid
+     * @var string
      */
     private $strid;
 
     /**
-     * @var string $name
+     * @var string
      */
     private $name;
 
