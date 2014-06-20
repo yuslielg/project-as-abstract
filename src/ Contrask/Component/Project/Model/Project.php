@@ -4,7 +4,6 @@ namespace Contrask\Component\Project\Model;
 
 /**
  * @author Yusliel Garcia <yuslielg@gmail.com>
- *
  */
 class Project
 {
