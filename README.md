@@ -1,4 +1,4 @@
-Cubalider Project As Abstract
+Contrask Project As Abstract
 =============================
 
 This library provides an abstraction for project concepts.
