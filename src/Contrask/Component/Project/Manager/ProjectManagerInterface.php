@@ -2,6 +2,8 @@
 
 namespace Contrask\Component\Project\Manager;
 
+use Contrask\Component\Project\Model\Project;
+
 /**
  * @author Yusliel Garcia <yuslielg@gmail.com>
  */
@@ -23,4 +25,28 @@ interface ProjectManagerInterface
      * @return array The projects
      */
     public function collect($criteria = null);
+
+    /**
+     * Adds given project
+     *
+     * @param Project $project
+     * @return void
+     */
+    public function add(Project $project);
+
+    /**
+     * Update given project
+     *
+     * @param Project $project
+     * @return void
+     */
+    public function update(Project $project);
+
+    /**
+     * Removes given project
+     *
+     * @param Project $project
+     * @return void
+     */
+    public function remove(Project $project);
 }
