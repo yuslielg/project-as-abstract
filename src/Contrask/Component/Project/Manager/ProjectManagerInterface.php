@@ -35,7 +35,7 @@ interface ProjectManagerInterface
     public function add(Project $project);
 
     /**
-     * Update given project
+     * Updates given project
      *
      * @param Project $project
      * @return void
