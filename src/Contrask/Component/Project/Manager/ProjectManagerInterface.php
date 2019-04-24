@@ -13,6 +13,7 @@ interface ProjectManagerInterface
      * Picks a project using given criteria.
      *
      * @param $criteria
+     *
      * @return mixed The project
      */
     public function pick($criteria);
@@ -22,30 +23,34 @@ interface ProjectManagerInterface
      * It returns all projects if criteria is null.
      *
      * @param mixed $criteria
+     *
      * @return array The projects
      */
     public function collect($criteria = null);
 
     /**
-     * Adds given project
+     * Adds given project.
      *
      * @param Project $project
+     *
      * @return void
      */
     public function add(Project $project);
 
     /**
-     * Updates given project
+     * Updates given project.
      *
      * @param Project $project
+     *
      * @return void
      */
     public function update(Project $project);
 
     /**
-     * Removes given project
+     * Removes given project.
      *
      * @param Project $project
+     *
      * @return void
      */
     public function remove(Project $project);
